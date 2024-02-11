@@ -2,7 +2,6 @@
 /*
     Building and Deploying WAR on Jenkins-Master 
 */
-
 pipeline {
     agent {
         label {
