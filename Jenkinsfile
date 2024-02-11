@@ -9,6 +9,7 @@ pipeline{
     stages {
         stage ("stage-1") {
             steps {
+                sh "rm -rf *"
                 sh "git clone https://github.com/Darzzzz/pipe.git"
 
                 dir("/mnt/xyz/pipe") {
@@ -26,6 +27,7 @@ pipeline{
                 sh "sleep 10"
 
                 dir ("/mnt/zyx") {
+                    sh "rm -rf *"
                     sh "git clone https://github.com/Darzzzz/pipe.git -b 2023Q1"
 
                     dir("/mnt/zyx/pipe") {
