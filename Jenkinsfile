@@ -109,7 +109,7 @@ pipeline {
 
                 dir ("/mnt/xoow") {
                     sh "rm -rf *"
-                    sh "git clone https://github.com/Darzzzz/q1q2q3-jenkinsfile-docker.git -b 2023Q4"
+                    sh "git clone https://github.com/Darzzzz/q1q2q3-jenkinsfile-docker.git -b 2023Q5"
                         
                         dir ("/mnt/xoow/q1q2q3-jenkinsfile-docker") {
                             sh "pwd"
